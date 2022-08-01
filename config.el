@@ -52,5 +52,9 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-(setq projectile-project-search-path '("~/Workspaces/" "~/Workspaces/JzagorskEcs/src"))
+(setq projectile-project-search-path '("~/Workspaces/"))
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+
+(after! geiser
+  (setq geiser-repl-use-other-window nil)
+  (setq geiser-repl-window-allow-split nil))
